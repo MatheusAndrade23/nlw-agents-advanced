@@ -1,5 +1,5 @@
 # Variables
-@baseUrl = "http://localhost:3333"
+@baseUrl = http://localhost:3333
 
 # Health Check
 GET {{baseUrl}}/health
@@ -8,3 +8,14 @@ GET {{baseUrl}}/health
 
 # Get Rooms
 GET {{baseUrl}}/rooms
+
+###
+
+# Create Room
+POST {{baseUrl}}/rooms
+Content-Type: application/json
+
+{
+  "name": "New Room",
+  "description": "This is a new room for testing"
+}
